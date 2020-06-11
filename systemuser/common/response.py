@@ -51,3 +51,22 @@ USERINFO_SUCCESS = {
     "success": True,
     "msg": "",
 }
+
+LOGOUT_SUCCESS = {
+    "code": "2001",
+    "success": True,
+    "msg": "退出登录成功",
+}
+
+LOGOUT_FAILED = {
+    "code": "3001",
+    "success": False,
+    "msg": "退出登录失败",
+}
+
+
+LOGOUT_ERROR = {
+    "code": "500",
+    "success": False,
+    "msg": "系统错误",
+}

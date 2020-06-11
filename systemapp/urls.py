@@ -15,9 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from systemapp.views import MemberView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/user/', include('systemuser.urls')),
-    path('api/manage/', include('systemapp.urls')),
+    path('member', MemberView.as_view()),
 ]

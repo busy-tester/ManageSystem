@@ -38,10 +38,10 @@ class LoginView(APIView):
         return Response(response.LOGIN_SUCCESS)
 
 
-class Userinfo(APIView):
+class UserinfoView(APIView):
     """获取用户信息 Authorization"""
 
-    authentication_classes = [JWTAuthentication, ]
+    authentication_classes = [JWTAuthentication, ] # token 认证
 
     def get(self, request):
         token = request.META.get('HTTP_AUTHORIZATION', '')  # 获取token，django会转为大写
@@ -53,3 +53,23 @@ class Userinfo(APIView):
         nick_name = nick_name.nick_name
         response.USERINFO_SUCCESS["data"] = {"id": user_id, "nickname": nick_name}
         return Response(response.USERINFO_SUCCESS)
+
+
+class LogoutView(APIView):
+    """退出登录"""
+
+    authentication_classes = [JWTAuthentication, ]
+
+    def post(self, request):
+        token = request.META.get('HTTP_AUTHORIZATION', '')
+        auth = token.split()
+        jwt_token = auth[1]
+        jwt_info = jwt.decode(jwt_token, settings.SECRET_KEY)
+        user_id = jwt_info.get("userId")  # 得到用户id
+        try:
+            user_obj = models.Account.objects.filter(id=user_id).first()
+            if user_obj:
+                return Response(response.LOGOUT_SUCCESS)
+            return Response(response.LOGOUT_FAILED)
+        except Exception as e:
+            return Response(response.LOGOUT_ERROR)
