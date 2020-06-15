@@ -16,12 +16,12 @@ class Member(BaseTable):
 
     member_card = models.CharField("会员卡号", max_length=30, null=False)
     member_name = models.CharField("会员姓名", max_length=30, null=False)
-    member_birthday = models.DateField("会员生日", null=True)
-    phone_number = models.IntegerField("手机号码", null=True)
-    card_money = models.IntegerField("开卡金额", null=True)
-    Available_integral = models.IntegerField("可用积分", null=True)
+    member_birthday = models.DateField("会员生日", null=False)
+    phone_number = models.CharField("手机号码", max_length=100, null=True, blank=True)
+    card_money = models.CharField("开卡金额", max_length=100, null=True, blank=True)
+    Available_integral = models.CharField("可用积分", max_length=100, null=True, blank=True)
     pay_type = models.IntegerField("支付类型", choices=pay_type, default=3)
-    member_address = models.CharField("会员地址", max_length=100, null=True)
+    member_address = models.CharField("会员地址", max_length=100, null=True, blank=True)
 
     class Meta:
         verbose_name = '会员信息'

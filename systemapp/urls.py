@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from systemapp.views import MemberView
-from systemapp.views import SearchMemberView
+from systemapp.views.member import MemberView
+from systemapp.views.member import SearchMemberView
 
 urlpatterns = [
     path('member', MemberView.as_view()),

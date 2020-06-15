@@ -3,15 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5d24a290-358c-48e5-ac50-1918d10c4f93" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/systemapp/untils/pagination.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/untils/pagination.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/systemapp/untils/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/untils/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/systemapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/systemapp/untils/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/untils/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/systemapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/systemapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/systemuser/common/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemuser/common/serializers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,24 +57,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/systemapp/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="73" column="50" lean-forward="true" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <element signature="e#686#988#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/systemapp/untils/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="495">
+              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -86,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="das://5f38cf29-4773-4a4b-a183-b2cdf0aec133/schema/main/table/Member">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -100,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/systemapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="18" column="56" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="56" />
+            <state relative-caret-position="65">
+              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -112,8 +95,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/systemapp/untils/response.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+            <state relative-caret-position="198">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/systemapp/views/member.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="42" column="50" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#452#754#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/systemapp/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <folding>
+                <element signature="e#636#668#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,17 +156,18 @@
         <option value="$PROJECT_DIR$/systemuser/views.py" />
         <option value="$PROJECT_DIR$/ManageSystem/settings.py" />
         <option value="$PROJECT_DIR$/systemapp/untils/pagination.py" />
-        <option value="$PROJECT_DIR$/systemapp/urls.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/systemuser/common/serializers.py" />
-        <option value="$PROJECT_DIR$/systemapp/models.py" />
-        <option value="$PROJECT_DIR$/systemapp/untils/serializers.py" />
         <option value="$PROJECT_DIR$/systemapp/untils/response.py" />
+        <option value="$PROJECT_DIR$/systemapp/untils/serializers.py" />
+        <option value="$PROJECT_DIR$/systemapp/models.py" />
+        <option value="$PROJECT_DIR$/systemapp/untils/views/member.py" />
+        <option value="$PROJECT_DIR$/systemapp/urls.py" />
         <option value="$PROJECT_DIR$/systemapp/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-1928" />
     <option name="y" value="-132" />
     <option name="width" value="1936" />
@@ -170,16 +179,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ManageSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageSystem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageSystem" type="462c0819:PsiDirectoryNode" />
               <item name="ManageSystem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -208,19 +213,21 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FasterRunner-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\django-project\ManageSystem\systemapp" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\django-project\ManageSystem\systemapp" />
       <recent name="E:\django-project\ManageSystem\systemuser" />
@@ -313,22 +320,25 @@
       <workItem from="1591964622641" duration="2551000" />
       <workItem from="1592012304023" duration="26339000" />
       <workItem from="1592059723674" duration="2330000" />
-      <workItem from="1592104912710" duration="21242000" />
+      <workItem from="1592104912710" duration="21659000" />
+      <workItem from="1592138931675" duration="60000" />
+      <workItem from="1592225931793" duration="2281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88756000" />
+    <option name="totallyTimeSpent" value="91514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-132" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.054371003" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12633263" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21258135" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1691974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29016393" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -337,7 +347,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.27704918" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2733189" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -345,7 +355,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
-      <window_info anchor="right" id="Database" order="5" weight="0.17700455" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.1924307" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,16 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/systemapp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#636#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/systemuser/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -533,22 +533,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/systemapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="56" />
+        <state relative-caret-position="65">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/systemapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#636#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/systemapp/untils/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="495">
+          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemapp/untils/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemapp/views/member.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="42" column="50" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#452#754#1" />
           </folding>
         </state>
       </provider>
@@ -559,24 +597,6 @@
           <filtering enabled="true">
             <filter text="" />
           </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemapp/untils/response.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="73" column="50" lean-forward="true" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#686#988#1" />
-          </folding>
         </state>
       </provider>
     </entry>
