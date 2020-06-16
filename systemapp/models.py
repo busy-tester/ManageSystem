@@ -33,8 +33,8 @@ class Supplier(BaseTable):
 
     supplier_name = models.CharField('供应商名称', max_length=20, null=False)
     contacts = models.CharField('联系人', max_length=20, null=False)
-    contacts_iphone = models.IntegerField("联系电话", null=True)
-    remarks = models.CharField("备注", max_length=200, null=True)
+    contacts_iphone = models.CharField("联系电话", null=True, max_length=20, blank=True)
+    remarks = models.CharField("备注", max_length=200, null=True, blank=True)
 
     class Meta:
         verbose_name = "供应商信息"
@@ -46,10 +46,10 @@ class Goods(BaseTable):
 
     name = models.CharField("商品名称", max_length=20, null=False)
     code = models.CharField("商品编码", max_length=50, null=False)
-    specs = models.CharField("商品规格", max_length=30, null=True)
-    retail_price = models.IntegerField('零售价', null=True)
-    buying_price = models.IntegerField('进货价', null=True)
-    amount = models.IntegerField("库存数量", null=True)
+    specs = models.CharField("商品规格", max_length=30, null=True, blank=True)
+    retail_price = models.CharField('零售价', max_length=20, null=True, blank=True)
+    buying_price = models.CharField('进货价', max_length=20, null=True, blank=True)
+    amount = models.CharField("库存数量", max_length=20, null=True, blank=True)
     supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE)
 
     class Meta:
@@ -61,10 +61,10 @@ class Staff(BaseTable):
     """员工管理"""
     account = models.CharField("账号", max_length=20, null=False)
     name = models.CharField("姓名", max_length=10, null=False)
-    age = models.IntegerField('年龄', null=True)
-    iphone = models.IntegerField('电话', null=True)
-    salary = models.IntegerField("薪酬", null=True, default=8000)
-    entry_time = models.DateField("入职时间", null=True)
+    age = models.CharField('年龄', max_length=20, null=True, blank=True)
+    iphone = models.CharField('电话', max_length=20, null=True, blank=True)
+    salary = models.CharField("薪酬", max_length=20, null=True, default=8000, blank=True)
+    entry_time = models.CharField("入职时间", max_length=20, null=True, blank=True)
 
     class Meta:
         verbose_name = "员工信息"

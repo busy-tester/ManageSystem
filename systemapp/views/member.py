@@ -40,7 +40,7 @@ class MemberView(APIView):
             return Response(response.MEMBER_SUCCESS)
         else:
             # return Response(response.MEMBER_FAILD)
-            return Response(ser_obj.error_messages)
+            return Response(response.MEMBER_FAILD)
 
     def get(self, request):
         # http://127.0.0.1:8081/api/manage/member?page=2&size=1
@@ -69,7 +69,7 @@ class MemberView(APIView):
         if ser_obj.is_valid():
             ser_obj.save()
             return Response(response.MEMBER_UPDATE_SUCCESS)
-        return Response(response.MEMBER_FAILD)
+        return Response(response.MEMBER_UPDATE_FAILD)
 
     def delete(self, request):
         member_id = request.query_params.get('id')
@@ -80,7 +80,7 @@ class MemberView(APIView):
             member_obj.delete()
             return Response(response.MEMBER_DELETE_SUCCESS)
         except Exception:
-            return Response(response.MEMBER_UPDATE_FAILD)
+            return Response(response.MEMBER_DELETE_FAILD)
 
 
 class SearchMemberView(APIView):
