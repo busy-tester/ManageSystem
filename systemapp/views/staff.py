@@ -54,11 +54,14 @@ class StaffView(APIView):
 
     def put(self, request):
         staff_id = request.data.get('id')
+        print(staff_id)
         staff_obj = Staff.objects.filter(id=staff_id).first()
         if not staff_obj:
+            print(111)
             return Response(response.STAFF_NOT_EXIST)
-        # request.data.pop("update_time")
-        # request.data.pop("create_time")
+        print(222)
+        request.data.pop("update_time")
+        request.data.pop("create_time")
         ser_obj = serializers.StaffSerializer(instance=staff_obj, data=request.data, partial=True)
         if ser_obj.is_valid():
             ser_obj.save()
