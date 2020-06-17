@@ -60,8 +60,8 @@ class SupplierView(APIView):
         ser_obj = serializers.SupplierSerializer(instance=supplier_obj, data=request.data, partial=True)
         if ser_obj.is_valid():
             ser_obj.save()
-            return Response(response.SUPPLIER_UPDATE_SUCCESS)
-        return Response(response.MEMBER_FAILD)
+            return Response(response.UPDATE_SUCCESS)
+        return Response(response.UPDATE_FAILD)
 
     def delete(self, request):
         supplier_id = request.query_params.get('id')
@@ -70,9 +70,9 @@ class SupplierView(APIView):
             return Response(response.SUPPLIER_NOT_EXIST)
         try:
             supplier_obj.delete()
-            return Response(response.SUPPLIER_DELETE_SUCCESS)
+            return Response(response.DELETE_SUCCESS)
         except Exception:
-            return Response(response.SUPPLIER_DELETE_FAILD)
+            return Response(response.DELETE_FAILD)
 
 
 class SearchSupplierView(APIView):

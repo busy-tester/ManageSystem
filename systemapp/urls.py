@@ -17,10 +17,13 @@ from django.contrib import admin
 from django.urls import path, include
 from systemapp.views.member import MemberView, SearchMemberView
 from systemapp.views.supplier import SupplierView, SearchSupplierView
+from systemapp.views.staff import StaffView, SearchStaffView
 
 urlpatterns = [
     path('member', MemberView.as_view()),
     path('supplier', SupplierView.as_view()),
+    path('staff', StaffView.as_view()),
     path('search/member', SearchMemberView.as_view()),
     path('search/supplier', SearchSupplierView.as_view()),
+    path('search/staff', SearchStaffView.as_view()),
 ]

@@ -1,3 +1,30 @@
+UPDATE_SUCCESS = {
+    "code": "2002",
+    "success": True,
+    "msg": "更新成功"
+
+}
+DELETE_FAILD = {
+    "code": "4002",
+    "success": False,
+    "msg": "删除失败"
+
+}
+
+DELETE_SUCCESS = {
+    "code": "2002",
+    "success": True,
+    "msg": "删除成功"
+
+}
+
+UPDATE_FAILD = {
+    "code": "4002",
+    "success": False,
+    "msg": "更新失败"
+
+}
+
 MEMBER_EXIST = {
     "code": "3001",
     "success": False,
@@ -17,41 +44,12 @@ MEMBER_FAILD = {
 
 }
 
-
-
 MEMBER_NOT_EXIST = {
     "code": "4001",
     "success": False,
     "msg": "会员不存在"
 
 }
-
-MEMBER_UPDATE_SUCCESS = {
-    "code": "2002",
-    "success": True,
-    "msg": "更新成功"
-
-}
-MEMBER_DELETE_FAILD = {
-    "code": "4002",
-    "success": False,
-    "msg": "删除失败"
-
-}
-MEMBER_UPDATE_FAILD = {
-    "code": "4002",
-    "success": False,
-    "msg": "会员更新失败"
-
-}
-
-MEMBER_DELETE_SUCCESS = {
-    "code": "2002",
-    "success": True,
-    "msg": "删除成功"
-
-}
-
 
 """供应商"""
 SUPPLIER_EXIST = {
@@ -82,19 +80,6 @@ SUPPLIER_NOT_EXIST = {
 
 }
 
-SUPPLIER_UPDATE_SUCCESS = {
-    "code": "2002",
-    "success": True,
-    "msg": "更新成功"
-
-}
-
-SUPPLIER_DELETE_FAILD = {
-    "code": "4002",
-    "success": False,
-    "msg": "删除失败"
-
-}
 SUPPLIER_UPDATE_FAILD = {
     "code": "4002",
     "success": False,
@@ -102,9 +87,31 @@ SUPPLIER_UPDATE_FAILD = {
 
 }
 
-SUPPLIER_DELETE_SUCCESS = {
-    "code": "2002",
+"""员工"""
+STAFF_NOT_EXIST = {
+    "code": "4001",
+    "success": False,
+    "msg": "员工不存在"
+
+}
+
+STAFF_EXIST = {
+    "code": "3001",
+    "success": False,
+    "msg": "员工名称已存在"
+
+}
+
+STAFF_SUCCESS = {
+    "code": "2001",
     "success": True,
-    "msg": "删除成功"
+    "msg": "员工添加成功"
+
+}
+
+STAFF_FAILD = {
+    "code": "4001",
+    "success": False,
+    "msg": "员工添加失败"
 
 }

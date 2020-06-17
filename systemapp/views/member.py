@@ -39,7 +39,6 @@ class MemberView(APIView):
             ser_obj.save()  # 添加数据
             return Response(response.MEMBER_SUCCESS)
         else:
-            # return Response(response.MEMBER_FAILD)
             return Response(response.MEMBER_FAILD)
 
     def get(self, request):
@@ -68,8 +67,8 @@ class MemberView(APIView):
         ser_obj = serializers.MemberSerializer(instance=member_obj, data=request.data, partial=True)
         if ser_obj.is_valid():
             ser_obj.save()
-            return Response(response.MEMBER_UPDATE_SUCCESS)
-        return Response(response.MEMBER_UPDATE_FAILD)
+            return Response(response.UPDATE_SUCCESS)
+        return Response(response.UPDATE_FAILD)
 
     def delete(self, request):
         member_id = request.query_params.get('id')
@@ -78,9 +77,9 @@ class MemberView(APIView):
             return Response(response.MEMBER_NOT_EXIST)
         try:
             member_obj.delete()
-            return Response(response.MEMBER_DELETE_SUCCESS)
+            return Response(response.DELETE_SUCCESS)
         except Exception:
-            return Response(response.MEMBER_DELETE_FAILD)
+            return Response(response.DELETE_FAILD)
 
 
 class SearchMemberView(APIView):

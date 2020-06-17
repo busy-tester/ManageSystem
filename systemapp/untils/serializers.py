@@ -20,3 +20,13 @@ class SupplierSerializer(serializers.ModelSerializer):
     class Meta:
         model = Supplier
         fields = "__all__"
+
+
+class StaffSerializer(serializers.ModelSerializer):
+    """员工序列化"""
+    update_time = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", required=False, read_only=True)
+    create_time = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", required=False, read_only=True)
+
+    class Meta:
+        model = Staff
+        fields = "__all__"
