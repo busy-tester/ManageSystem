@@ -4,28 +4,10 @@ KEY_MISS = {
     "msg": "请求数据非法"
 }
 
-REGISTER_USERNAME_EXIST = {
-    "code": "3101",
-    "success": False,
-    "msg": "用户名已被注册"
-}
-
-REGISTER_EMAIL_EXIST = {
-    "code": "3101",
-    "success": False,
-    "msg": "邮箱已被注册"
-}
-
 SYSTEM_ERROR = {
     "code": "9999",
     "success": False,
     "msg": "System Error"
-}
-
-REGISTER_SUCCESS = {
-    "code": "0001",
-    "success": True,
-    "msg": "register success"
 }
 
 LOGIN_FAILED = {
@@ -64,9 +46,32 @@ LOGOUT_FAILED = {
     "msg": "退出登录失败",
 }
 
-
 LOGOUT_ERROR = {
     "code": "500",
     "success": False,
     "msg": "系统错误",
+}
+
+REGISTER_EXIST = {
+    "code": "4001",
+    "success": False,
+    "msg": "邮箱已被注册",
+}
+
+REGISTER_SUCCESS = {
+    "code": "2001",
+    "success": True,
+    "msg": "注册成功",
+}
+
+REGISTER_USERNAME_EXIST = {
+    "code": "3101",
+    "success": False,
+    "msg": "用户名已被注册"
+}
+
+REGISTER_FAILD = {
+    "code": "4002",
+    "success": False,
+    "msg": "注册失败，请稍后重试",
 }

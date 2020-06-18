@@ -41,7 +41,7 @@ class LoginView(APIView):
 class UserinfoView(APIView):
     """获取用户信息 Authorization"""
 
-    authentication_classes = [JWTAuthentication, ] # token 认证
+    authentication_classes = [JWTAuthentication, ]  # token 认证
 
     def get(self, request):
         token = request.META.get('HTTP_AUTHORIZATION', '')  # 获取token，django会转为大写
@@ -73,3 +73,30 @@ class LogoutView(APIView):
             return Response(response.LOGOUT_FAILED)
         except Exception as e:
             return Response(response.LOGOUT_ERROR)
+
+
+class RegisterView(APIView):
+    """
+    注册视图
+    {
+        "username":"test",
+        "password":"123456",
+        "email":"233@qq.com",
+        "nick_name":"测试"
+    }
+    """
+
+    def post(self, request):
+        email = request.data.get('email')
+        username = request.data.get('username')
+        email_obj = models.Account.objects.filter(email=email).exists()
+        username_obj = models.Account.objects.filter(username=username).exists()
+        if email_obj:
+            return Response(response.REGISTER_EXIST)
+        if username_obj:
+            return Response(response.REGISTER_USERNAME_EXIST)
+        ser_obj = serializers.UserInfoSerializers(data=request.data)
+        if ser_obj.is_valid():
+            ser_obj.save()
+            return Response(response.REGISTER_SUCCESS)
+        return Response(response.REGISTER_FAILD)

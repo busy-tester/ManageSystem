@@ -7,3 +7,4 @@ class UserInfoSerializers(serializers.ModelSerializer):
         model = models.Account
         fields = "__all__"
 
+

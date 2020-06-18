@@ -11,6 +11,7 @@ django-cors-headers = "*"
 django-filter = "*"
 django = "*"
 djangorestframework = "*"
+pymysql = "*"
 
 [requires]
 python_version = "3.6"

@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -25,8 +24,7 @@ SECRET_KEY = '!4q(oitqv^#-whdm7=o8m(6w1+l))$y8-s#v-bty4_ql$-^5$2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -76,17 +74,27 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ManageSystem.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',  # 连接数据库的类型
+        'NAME': 'managesystem',  # 数据库名
+        'HOST': '49.235.160.132',  # 数据库主机地址
+        'PORT': 3307,  # 数据库的端口
+        'USER': 'root',  # 登录数据库的用户名
+        'PASSWORD': 'zou123456',  # 登录数据库的密码
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -106,7 +114,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
@@ -124,13 +131,10 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
-
 
 CORS_ALLOW_CREDENTIALS = True  # 允许跨域时携带Cookie，默认为False
 CORS_ORIGIN_ALLOW_ALL = True  # 所有ip都可以访问后端接口

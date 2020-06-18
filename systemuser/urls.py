@@ -18,10 +18,13 @@ from django.urls import path, include
 from systemuser.views import LoginView
 from systemuser.views import UserinfoView
 from systemuser.views import LogoutView
+from systemuser.views import RegisterView
+
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('login', LoginView.as_view()),
     path('info', UserinfoView.as_view()),
-    path('logout', LogoutView.as_view())
+    path('logout', LogoutView.as_view()),
+    path('register',RegisterView.as_view())
 ]

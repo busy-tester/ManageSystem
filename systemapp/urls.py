@@ -18,11 +18,13 @@ from django.urls import path, include
 from systemapp.views.member import MemberView, SearchMemberView
 from systemapp.views.supplier import SupplierView, SearchSupplierView
 from systemapp.views.staff import StaffView, SearchStaffView
+from systemapp.views.goods import GoodsView
 
 urlpatterns = [
-    path('member', MemberView.as_view()),
-    path('supplier', SupplierView.as_view()),
-    path('staff', StaffView.as_view()),
+    path('member', MemberView.as_view()),  # 会员
+    path('supplier', SupplierView.as_view()),  # 供应商
+    path('staff', StaffView.as_view()),  # 员工
+    path('goods', GoodsView.as_view()),  # 商品
     path('search/member', SearchMemberView.as_view()),
     path('search/supplier', SearchSupplierView.as_view()),
     path('search/staff', SearchStaffView.as_view()),

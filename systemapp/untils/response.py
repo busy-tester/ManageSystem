@@ -115,3 +115,25 @@ STAFF_FAILD = {
     "msg": "员工添加失败"
 
 }
+
+"""商品"""
+
+GOODS_EXIST = {
+    "code": "3001",
+    "success": False,
+    "msg": "商品名称已存在"
+
+}
+GOODS_SUCCESS = {
+    "code": "2001",
+    "success": True,
+    "msg": "商品添加成功"
+
+}
+
+GOODS_FAILD = {
+    "code": "4001",
+    "success": False,
+    "msg": "商品添加失败"
+
+}

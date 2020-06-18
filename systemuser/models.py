@@ -3,6 +3,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class BaseTable(models.Model):
     """公共字段列，用于其他表继承这两个字段"""
 
