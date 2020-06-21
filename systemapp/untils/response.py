@@ -137,3 +137,10 @@ GOODS_FAILD = {
     "msg": "商品添加失败"
 
 }
+
+GOODS_NOT_EXIST = {
+    "code": "4001",
+    "success": False,
+    "msg": "商品不存在"
+
+}

@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d24a290-358c-48e5-ac50-1918d10c4f93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/systemapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/systemapp/untils/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/untils/response.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/systemapp/untils/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/untils/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/systemapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/systemapp/views/goods.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/views/goods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/systemapp/views/member.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/views/member.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/systemapp/views/staff.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/views/staff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/systemapp/views/supplier.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/views/supplier.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,11 +65,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/systemapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="33" column="17" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="17" />
+            <state relative-caret-position="231">
+              <caret line="46" column="8" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="8" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -74,13 +77,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/systemapp/views/goods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+            <state relative-caret-position="354">
+              <caret line="67" column="37" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="37" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#381#590#1" />
               </folding>
             </state>
           </provider>
@@ -89,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/systemapp/untils/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="42" column="35" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="35" />
+            <state relative-caret-position="633">
+              <caret line="54" column="32" lean-forward="true" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -101,11 +105,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/systemapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+            <state relative-caret-position="484">
+              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
               <folding>
                 <element signature="e#636#668#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/systemapp/views/staff.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/systemapp/untils/response.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="140" selection-start-line="140" selection-end-line="140" />
             </state>
           </provider>
         </entry>
@@ -126,6 +151,7 @@
       <find>member_card</find>
       <find>REGISTER_SUCCESS</find>
       <find>REGISTER</find>
+      <find>query_set</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,8 +168,6 @@
         <option value="$PROJECT_DIR$/systemapp/untils/views/member.py" />
         <option value="$PROJECT_DIR$/systemapp/views.py" />
         <option value="$PROJECT_DIR$/systemapp/tests.py" />
-        <option value="$PROJECT_DIR$/systemapp/views/member.py" />
-        <option value="$PROJECT_DIR$/systemapp/views/staff.py" />
         <option value="$PROJECT_DIR$/systemuser/urls.py" />
         <option value="$PROJECT_DIR$/systemuser/common/serializers.py" />
         <option value="$PROJECT_DIR$/systemuser/views.py" />
@@ -151,12 +175,14 @@
         <option value="$PROJECT_DIR$/systemuser/models.py" />
         <option value="$PROJECT_DIR$/ManageSystem/settings.py" />
         <option value="$PROJECT_DIR$/ManageSystem/__init__.py" />
-        <option value="$PROJECT_DIR$/systemapp/untils/response.py" />
-        <option value="$PROJECT_DIR$/systemapp/views/supplier.py" />
-        <option value="$PROJECT_DIR$/systemapp/urls.py" />
         <option value="$PROJECT_DIR$/systemapp/models.py" />
-        <option value="$PROJECT_DIR$/systemapp/views/goods.py" />
         <option value="$PROJECT_DIR$/systemapp/untils/serializers.py" />
+        <option value="$PROJECT_DIR$/systemapp/urls.py" />
+        <option value="$PROJECT_DIR$/systemapp/untils/response.py" />
+        <option value="$PROJECT_DIR$/systemapp/views/member.py" />
+        <option value="$PROJECT_DIR$/systemapp/views/supplier.py" />
+        <option value="$PROJECT_DIR$/systemapp/views/staff.py" />
+        <option value="$PROJECT_DIR$/systemapp/views/goods.py" />
       </list>
     </option>
   </component>
@@ -344,12 +370,12 @@
       <workItem from="1592486011339" duration="1858000" />
       <workItem from="1592487911503" duration="3099000" />
       <workItem from="1592569984934" duration="5404000" />
-      <workItem from="1592713572650" duration="12890000" />
+      <workItem from="1592713572650" duration="16308000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127512000" />
+    <option name="totallyTimeSpent" value="130930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-132" width="1936" height="1056" extended-state="6" />
@@ -360,7 +386,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18655097" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23210412" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29015544" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -552,44 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/systemapp/untils/response.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4389">
-          <caret line="133" column="15" selection-start-line="133" selection-start-column="15" selection-end-line="133" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemapp/views/supplier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemapp/views/staff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemapp/views/member.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#452#754#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Envs/ManageSystem-i5BrG7va/Lib/site-packages/django/db/models/fields/related.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -604,42 +592,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/systemapp/urls.py">
+    <entry file="file://$PROJECT_DIR$/systemapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+        <state relative-caret-position="231">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="8" />
           <folding>
-            <element signature="e#636#668#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/systemapp/untils/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="42" column="35" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="35" />
+        <state relative-caret-position="633">
+          <caret line="54" column="32" lean-forward="true" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/systemapp/views/goods.py">
+    <entry file="file://$PROJECT_DIR$/systemapp/views/member.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        <state relative-caret-position="114">
+          <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#452#754#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemapp/views/supplier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/systemapp/models.py">
+    <entry file="file://$PROJECT_DIR$/systemapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="17" />
+        <state relative-caret-position="484">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#636#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemapp/views/staff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemapp/untils/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemapp/views/goods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="67" column="37" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#381#590#1" />
           </folding>
         </state>
       </provider>

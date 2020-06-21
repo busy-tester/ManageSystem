@@ -42,7 +42,7 @@ class MemberView(APIView):
             return Response(response.MEMBER_FAILD)
 
     def get(self, request):
-        # http://127.0.0.1:8081/api/manage/member?page=2&size=1
+        # http://127.0.0.1:8081/api/manage/member?id=1
         member_id = request.query_params.get('id')
         merber_obj = Member.objects.filter(id=member_id).first()
         if not merber_obj:

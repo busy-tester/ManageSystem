@@ -18,7 +18,7 @@ from django.urls import path, include
 from systemapp.views.member import MemberView, SearchMemberView
 from systemapp.views.supplier import SupplierView, SearchSupplierView
 from systemapp.views.staff import StaffView, SearchStaffView
-from systemapp.views.goods import GoodsView
+from systemapp.views.goods import GoodsView, SearchGoodsView
 
 urlpatterns = [
     path('member', MemberView.as_view()),  # 会员
@@ -28,4 +28,5 @@ urlpatterns = [
     path('search/member', SearchMemberView.as_view()),
     path('search/supplier', SearchSupplierView.as_view()),
     path('search/staff', SearchStaffView.as_view()),
+    path('search/goods', SearchGoodsView.as_view()),
 ]

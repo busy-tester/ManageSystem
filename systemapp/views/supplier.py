@@ -35,7 +35,7 @@ class SupplierView(APIView):
             return Response(response.SUPPLIER_FAILD)
 
     def get(self, request):
-        # http://127.0.0.1:8081/api/manage/supplier
+        # http://127.0.0.1:8081/api/manage/supplier?id=1
         supplier_id = request.query_params.get('id')
         supplier_obj = Supplier.objects.filter(id=supplier_id).first()
         if not supplier_obj:

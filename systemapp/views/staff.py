@@ -37,7 +37,7 @@ class StaffView(APIView):
             return Response(response.STAFF_FAILD)
 
     def get(self, request):
-        # http://127.0.0.1:8081/api/manage/supplier
+        # http://127.0.0.1:8081/api/manage/supplier?id=1
         staff_id = request.query_params.get('id')
         staff_obj = Staff.objects.filter(id=staff_id).first()
         if not staff_obj:
@@ -54,12 +54,11 @@ class StaffView(APIView):
 
     def put(self, request):
         staff_id = request.data.get('id')
-        print(staff_id)
+
         staff_obj = Staff.objects.filter(id=staff_id).first()
         if not staff_obj:
-            print(111)
             return Response(response.STAFF_NOT_EXIST)
-        print(222)
+
         request.data.pop("update_time")
         request.data.pop("create_time")
         ser_obj = serializers.StaffSerializer(instance=staff_obj, data=request.data, partial=True)
@@ -92,7 +91,6 @@ class SearchStaffView(APIView):
             queryset = queryset.filter(account__contains=account).order_by('-update_time')  # 更新时间倒序排序
         if name:
             queryset = queryset.filter(name__contains=name).order_by('-update_time')  # 更新时间倒序排序
-
         if not account and not name:
             queryset = Staff.objects.all().order_by('-update_time')  # 更新时间倒序排序
         total_num = queryset.filter().count()
