@@ -24,7 +24,7 @@ class GoodsView(APIView):
     }
     """
 
-    # authentication_classes = [JWTAuthentication, ]
+    authentication_classes = [JWTAuthentication, ]
 
     def post(self, request):
         name = request.data.get('name')
@@ -37,6 +37,7 @@ class GoodsView(APIView):
             return Response(response.GOODS_SUCCESS)
         else:
             return Response(response.GOODS_FAILD)
+
     # 查询全部数据
     # def get(self, request):
     #     data_all = Goods.objects.all()
@@ -124,3 +125,5 @@ class SearchGoodsView(APIView):
         }
         # 返回的是 res 了，不在是ser_obj.data
         return Response(res)
+
+

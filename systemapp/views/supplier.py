@@ -77,6 +77,7 @@ class SupplierView(APIView):
 
 class SearchSupplierView(APIView):
     """http://127.0.0.1:8081/api/manage/search/supplier?page=1&size=30"""
+
     authentication_classes = [JWTAuthentication, ]
 
     def post(self, request):
@@ -107,3 +108,10 @@ class SearchSupplierView(APIView):
         }
         # 返回的是 res 了，不在是ser_obj.data
         return Response(res)
+
+    def get(self, request):
+        """获取供应商，选择商品需要"""
+        supplier_obj = Supplier.objects.all()
+
+        ser_obj = serializers.SupplierSerializer(supplier_obj, many=True)
+        return Response(ser_obj.data)
