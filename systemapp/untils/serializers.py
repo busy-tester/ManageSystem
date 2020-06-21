@@ -37,6 +37,17 @@ class GoodsSerializer(serializers.ModelSerializer):
     update_time = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", required=False, read_only=True)
     create_time = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", required=False, read_only=True)
 
+    supplier_info = serializers.SerializerMethodField(read_only=True)
+
+    def get_supplier_info(self, obj):
+        supplier_obj = obj.supplier
+        return {"id": supplier_obj.id, 'name': supplier_obj.supplier_name}
+
     class Meta:
         model = Goods
         fields = "__all__"
+        # extra_kwargs = {"supplier": {"write_only": True}}
+        # depth = 1
+
+        # fields = ["id", 'name', "code", "specs", "retail_price", "buying_price", "amount", "supplier_id", "create_time",
+        #           "update_time"]

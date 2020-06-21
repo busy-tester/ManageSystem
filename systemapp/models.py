@@ -50,8 +50,7 @@ class Goods(BaseTable):
     retail_price = models.CharField('零售价', max_length=20, null=True, blank=True)
     buying_price = models.CharField('进货价', max_length=20, null=True, blank=True)
     amount = models.CharField("库存数量", max_length=20, null=True, blank=True)
-    supplier = models.CharField("供应商", max_length=20, null=True, blank=True)
-    supplier_goods = models.ForeignKey(to="Supplier", on_delete=models.CASCADE)
+    supplier = models.ForeignKey(to="Supplier", related_name="supplier", on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = "商品信息"

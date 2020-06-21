@@ -1,7 +1,8 @@
 from django.shortcuts import render
+from rest_framework import mixins, generics, viewsets
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from systemapp.models import Goods
+from systemapp.models import Goods, Supplier
 from systemapp.untils import serializers
 from systemapp.untils import response
 from systemapp.untils import pagination
@@ -35,4 +36,23 @@ class GoodsView(APIView):
             ser_obj.save()
             return Response(response.GOODS_SUCCESS)
         else:
-            return Response(response.GOODS_FAILD)
+            return Response(ser_obj.error_messages)
+            # return Response(response.GOODS_FAILD)
+
+    def get(self, request):
+        data_all = Goods.objects.all()
+        ser_obj = serializers.GoodsSerializer(data_all, many=True)
+        return Response(ser_obj.data)
+        # if ser_obj.is_valid():
+        #     return Response(ser_obj.data)
+        # return Response(ser_obj.error_messages)
+
+
+
+    # queryset = Goods.objects.all()[:5]
+    # serializer_class = serializers.GoodsSerializer
+    #
+    # def get(self, request, *args, **kwargs):
+    #     return self.list(request, *args, **kwargs)
+    # queryset = Goods.objects.all()
+    # serializer_class = serializers.GoodsSerializer
