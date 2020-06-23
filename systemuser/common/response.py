@@ -16,11 +16,11 @@ LOGIN_FAILED = {
     "msg": "用户名或密码错误"
 }
 
-# USER_NOT_EXISTS = {
-#     "code": "3104",
-#     "success": False,
-#     "msg": "该用户未注册"
-# }
+TOKEN_ERROR = {
+    "code": "3104",
+    "success": False,
+    "msg": "token错误"
+}
 
 LOGIN_SUCCESS = {
     "code": "2001",
@@ -74,4 +74,28 @@ REGISTER_FAILD = {
     "code": "4002",
     "success": False,
     "msg": "注册失败，请稍后重试",
+}
+
+CHECK_PWD_FAILD = {
+    "code": "3101",
+    "success": False,
+    "msg": "密码错误"
+}
+
+CHECK_PWD_SUCCESS = {
+    "code": "2000",
+    "success": True,
+    "msg": "密码正确"
+}
+
+UPDATE_PWD_FAILD = {
+    "code": "3101",
+    "success": False,
+    "msg": "修改密码失败"
+}
+
+UPDATE_PWD_SUCCESS = {
+    "code": "2000",
+    "success": True,
+    "msg": "修改密码成功，请重新登录"
 }

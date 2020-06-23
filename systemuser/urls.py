@@ -19,12 +19,15 @@ from systemuser.views import LoginView
 from systemuser.views import UserinfoView
 from systemuser.views import LogoutView
 from systemuser.views import RegisterView
-
+from systemuser.views import CheckPwdView
+from systemuser.views import UpdatePwdView
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('login', LoginView.as_view()),
     path('info', UserinfoView.as_view()),
     path('logout', LogoutView.as_view()),
-    path('register',RegisterView.as_view())
+    path('register', RegisterView.as_view()),
+    path('check/pwd', CheckPwdView.as_view()),
+    path('update/pwd', UpdatePwdView.as_view())
 ]

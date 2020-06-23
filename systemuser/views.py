@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework.viewsets import GenericViewSet
 from systemuser.common import response
 from systemuser import models
 import jwt
-from rest_framework.authentication import get_authorization_header
 from django.conf import settings
 from systemuser.common import serializers
 from systemuser.common.authentication import generate_jwt, JWTAuthentication
@@ -47,7 +47,10 @@ class UserinfoView(APIView):
         token = request.META.get('HTTP_AUTHORIZATION', '')  # 获取token，django会转为大写
         auth = token.split()  # token为一个列表
         jwt_token = auth[1]  # 1 是Authorization里JWT 后面的
-        jwt_info = jwt.decode(jwt_token, settings.SECRET_KEY)
+        try:
+            jwt_info = jwt.decode(jwt_token, settings.SECRET_KEY)
+        except Exception:
+            return Response(response.TOKEN_ERROR)
         user_id = jwt_info.get("userId")  # 得到用户id
         nick_name = models.Account.objects.filter(id=user_id).first()
         nick_name = nick_name.nick_name
@@ -64,7 +67,10 @@ class LogoutView(APIView):
         token = request.META.get('HTTP_AUTHORIZATION', '')
         auth = token.split()
         jwt_token = auth[1]
-        jwt_info = jwt.decode(jwt_token, settings.SECRET_KEY)
+        try:
+            jwt_info = jwt.decode(jwt_token, settings.SECRET_KEY)
+        except Exception:
+            return Response(response.TOKEN_ERROR)
         user_id = jwt_info.get("userId")  # 得到用户id
         try:
             user_obj = models.Account.objects.filter(id=user_id).first()
@@ -100,3 +106,52 @@ class RegisterView(APIView):
             ser_obj.save()
             return Response(response.REGISTER_SUCCESS)
         return Response(response.REGISTER_FAILD)
+
+
+class CheckPwdView(APIView):
+    """
+    检查密码
+    {
+        "update_time":"1221",
+        " create_time":"12",
+        "password":"12345qqq"
+    }
+    """
+
+    def post(self, request):
+        token = request.META.get('HTTP_AUTHORIZATION', '')
+        auth = token.split()
+        jwt_token = auth[1]
+        try:
+            jwt_info = jwt.decode(jwt_token, settings.SECRET_KEY)
+        except Exception:
+            return Response(response.TOKEN_ERROR)
+        user_id = jwt_info.get("userId")  # 得到用户id
+        pwd = request.data.get('password')
+        try:
+            user_obj = models.Account.objects.filter(id=user_id, password=pwd).first()
+            if user_obj:
+                return Response(response.CHECK_PWD_SUCCESS)
+            return Response(response.CHECK_PWD_FAILD)
+        except Exception as e:
+            return Response(response.SYSTEM_ERROR)
+
+
+class UpdatePwdView(APIView):
+    """更新密码"""
+
+    def put(self, request):
+        token = request.META.get('HTTP_AUTHORIZATION', '')
+        auth = token.split()
+        jwt_token = auth[1]
+        try:
+            jwt_info = jwt.decode(jwt_token, settings.SECRET_KEY)
+        except Exception:
+            return Response(response.TOKEN_ERROR)
+        user_id = jwt_info.get("userId")  # 得到用户id
+        account_obj = models.Account.objects.filter(id=user_id).first()
+        ser_obj = serializers.UserInfoSerializers(instance=account_obj, data=request.data, partial=True)
+        if ser_obj.is_valid():
+            ser_obj.save()
+            return Response(response.UPDATE_PWD_SUCCESS)
+        return Response(response.UPDATE_PWD_FAILD)
