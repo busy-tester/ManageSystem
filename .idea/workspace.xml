@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d24a290-358c-48e5-ac50-1918d10c4f93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/systemapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/systemapp/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemapp/views/__init__.py" afterDir="false" />
-    </list>
+    <list default="true" id="5d24a290-358c-48e5-ac50-1918d10c4f93" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,92 +57,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ManageSystem/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-              <folding>
-                <element signature="e#636#668#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systemuser/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2937">
-              <caret line="98" column="35" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systemuser/common/response.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2376">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systemapp/views/member.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="3" column="35" selection-end-line="8" />
-              <folding>
-                <element signature="e#452#754#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systemuser/common/serializers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systemuser/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-              <folding>
-                <element signature="e#636#668#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/systemapp/views/total.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systemapp/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="99">
+                <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -201,10 +119,11 @@
         <option value="$PROJECT_DIR$/systemapp/urls.py" />
         <option value="$PROJECT_DIR$/systemapp/views/__init__.py" />
         <option value="$PROJECT_DIR$/systemapp/views/total.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1928" />
     <option name="y" value="-132" />
     <option name="width" value="1936" />
@@ -222,33 +141,6 @@
             <path>
               <item name="ManageSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="ManageSystem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageSystem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="systemapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="systemapp" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="systemuser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="systemuser" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -399,23 +291,23 @@
       <workItem from="1592911247479" duration="6745000" />
       <workItem from="1593007094125" duration="1360000" />
       <workItem from="1593091525652" duration="815000" />
-      <workItem from="1593142125545" duration="3707000" />
+      <workItem from="1593142125545" duration="3981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150884000" />
+    <option name="totallyTimeSpent" value="151158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-132" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14818764" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14818764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21475054" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21475054" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29015544" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -718,6 +610,16 @@
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="99">
+            <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
