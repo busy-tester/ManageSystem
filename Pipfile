@@ -12,6 +12,7 @@ django-filter = "*"
 django = "*"
 djangorestframework = "*"
 pymysql = "*"
+drf-yasg = "*"
 
 [requires]
 python_version = "3.6"

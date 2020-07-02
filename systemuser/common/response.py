@@ -58,6 +58,12 @@ REGISTER_EXIST = {
     "msg": "邮箱已被注册",
 }
 
+EMAIL_ILLEGAL = {
+    "code": "4002",
+    "success": False,
+    "msg": "请正确输入邮箱",
+}
+
 REGISTER_SUCCESS = {
     "code": "2001",
     "success": True,
@@ -73,7 +79,7 @@ REGISTER_USERNAME_EXIST = {
 REGISTER_FAILD = {
     "code": "4002",
     "success": False,
-    "msg": "注册失败，请稍后重试",
+    "msg": "输入值有错误，请检查格式",
 }
 
 CHECK_PWD_FAILD = {

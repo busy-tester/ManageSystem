@@ -16,11 +16,10 @@ from systemuser.common.authentication import generate_jwt, JWTAuthentication
 class LoginView(APIView):
     """
     登录视图
-    {
-        "username": "zouzou",
-        "passwoed": "123456"
+        username: "test",
+        passwoed: "11111"
 
-    }
+
     """
 
     def post(self, request):
@@ -97,6 +96,8 @@ class RegisterView(APIView):
         username = request.data.get('username')
         email_obj = models.Account.objects.filter(email=email).exists()
         username_obj = models.Account.objects.filter(username=username).exists()
+        if "@" not in email:
+            return Response(response.EMAIL_ILLEGAL)
         if email_obj:
             return Response(response.REGISTER_EXIST)
         if username_obj:
